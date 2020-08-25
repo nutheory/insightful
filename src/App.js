@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import iilogo from './ii_main.svg';
+import excytelogo from './main_logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <header className="header">
+        <img src={iilogo} className="App-logo" alt="Insightful Innovations logo" />
+        <p className="desc">
+          We build highly available online tools to help teams and organizations manage marketing and sales. We do this through automation, and machine learning to maximize efficiency and ROI.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <h2 className="sub-header">Products</h2>
+      <div className="products">
+        <img src={excytelogo} className="App-logo" alt="Excyte logo" />
+      </div>
+      <h2 className="sub-header">Contact</h2>
+      <div className="products">
+        <a className="link" href="mailto:derek@insightful-innovations.com">contact@insightful-innovations.com</a>
+      </div>
     </div>
   );
 }
